@@ -1,0 +1,374 @@
+---
+title: "eventbriteDataViz"
+author: "kimp"
+date: "10/18/2018"
+output: html_document
+---
+
+# Load Libraries
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggthemes)
+```
+
+Clean / Review Collected Data
+```{r}
+# df = result after rbind-ing all the data from 10/3 - 10/17
+df <- read.csv("eventbrite.csv")
+
+# check unique events vs total events
+nrow(df) # 1238 total rows
+length(unique(df$events.id)) # 133 unique events
+
+# df2 = unique events
+df2 <- df[,-(1:3)] %>% unique()
+```
+
+Explore relationship between price and events by location.
+Note: Data only returns most events from nyc and a handful from LA. Not worth putting on a map, but we can make a bar graph visual.
+
+```{r}
+(p <- ggplot(data=df2, aes(x=events.is_free, group=events.start.timezone)) + 
+   geom_bar(position="stack", aes(fill=events.start.timezone)) + theme_tufte() + 
+   ggtitle("Count of Free and Paid Events") + 
+   scale_x_discrete(name = "Event Price", labels = c("FALSE" = "Paid", "TRUE" = "Free")) +
+   scale_fill_manual(values=c("#fcfc08", "#20acf7"), name="City",
+                         labels=c("Los Angeles", "New York City")) +
+   geom_text(stat='count', aes(label = ..count..), position = position_stack(vjust = 0.5), size=10)
+)
+```
+
+# Extra: dodge graph
+```{r}
+(p <- ggplot(data=df2, aes(x=events.is_free, group=events.start.timezone)) + 
+   geom_bar(position="dodge", aes(fill=events.start.timezone)) + theme_tufte() + 
+   ggtitle("Count of Free and Paid Events") + 
+   scale_x_discrete(name = "Event Price", labels = c("FALSE" = "Paid", "TRUE" = "Free")) +
+   scale_fill_manual(values=c("#fcfc08", "#86edf7"), name="City",
+                         labels=c("Los Angeles", "New York City")) +
+   geom_text(stat='count', aes(label = ..count..), position = position_dodge(0.9), vjust = 0)
+)
+```
+
+Explore relationship between price and events.
+
+```{r}
+df2 <- filter(df2, events.start.timezone=="America/New_York") # filter only NY events
+nrow(df2) # 166 unique rows... some events share same ID but have multiple occurences
+
+(p <- ggplot(data=df2, aes(x=events.is_free, fill=events.is_free)) + 
+   geom_bar() + theme_tufte() + 
+   ggtitle("Count of Free and Paid Events") + 
+   scale_x_discrete(name = "Event Price", labels = c("FALSE" = "Paid", "TRUE" = "Free")) +
+   scale_fill_discrete(name="Event Price",
+                         labels=c("Paid", "Free")) +
+   geom_text(color="white",stat='count', aes(label=..count..),vjust=2, size=10)
+)
+```
+
+Explore frequency of events over time
+
+```{r}
+# create df for dates
+dfDate <- select(df2, events.start.utc, events.start.timezone, events.is_free, events.name.text)
+dfDate$events.start.utc <- as.Date(dfDate$events.start.utc)
+str(dfDate)
+dfDate2 <- dfDate %>% group_by(events.start.utc, events.is_free) %>% count() %>% ungroup() # count events by date
+
+# bar plot
+(p <- ggplot(dfDate2, aes(x=events.start.utc, y=n, fill=events.is_free)) +
+   geom_bar(stat="identity") + xlab("") + theme_tufte() +
+   ggtitle("Count of Free and Paid Events") +
+   scale_fill_discrete(name="Event Price", labels=c("Paid", "Free")) +
+   scale_x_date(date_breaks = "months" , date_labels = "%b-%y", limits = as.Date(c("2018-09-1", "2018-12-31"))) +
+   facet_grid(events.is_free~.) +
+   theme(strip.text.y = element_blank())
+)
+
+# plot october counts
+(p <- ggplot(dfDate2, aes(x=events.start.utc, y=n, fill=events.is_free)) +
+   geom_bar(stat="identity") + xlab("") + theme_tufte() +
+   ggtitle("Count of Free and Paid Events (October)") +
+   scale_fill_discrete(name="Event Price", labels=c("Paid", "Free")) +
+   scale_x_date(date_breaks = "day" , date_labels = "%m-%d-%y", limits = as.Date(c("2018-10-1", "2018-10-28"))) +
+   facet_grid(events.is_free~.) +
+   theme(strip.text.y = element_blank()) +
+   theme(axis.text.x = element_text(angle = 70, hjust = 1)) +
+   geom_text(aes(label=n), hjust = "center", vjust = 1)
+)
+
+# plot november counts
+(p <- ggplot(dfDate2, aes(x=events.start.utc, y=n, fill=events.is_free)) +
+   geom_bar(stat="identity") + xlab("") + theme_tufte() +
+   ggtitle("Count of Free and Paid Events (November)") +
+   scale_fill_discrete(name="Event Price", labels=c("Paid", "Free")) +
+   scale_x_date(date_breaks = "day" , date_labels = "%m-%d-%y", limits = as.Date(c("2018-11-2", "2018-11-27"))) +
+   facet_grid(events.is_free~.) +
+   theme(strip.text.y = element_blank()) +
+   theme(axis.text.x = element_text(angle = 70, hjust = 1)) +
+   geom_text(aes(label=n), hjust = "center", vjust = 1)
+)
+
+# plot december counts
+(p <- ggplot(dfDate2, aes(x=events.start.utc, y=n, fill=events.is_free)) +
+   geom_bar(stat="identity") + xlab("") + theme_tufte() +
+   ggtitle("Count of Free and Paid Events (December)") +
+   scale_fill_discrete(name="Event Price", labels=c("Paid", "Free")) +
+   scale_x_date(date_breaks = "day" , date_labels = "%m-%d-%y", limits = as.Date(c("2018-12-1", "2018-12-28"))) +
+   facet_grid(events.is_free~.) +
+   theme(strip.text.y = element_blank()) +
+   theme(axis.text.x = element_text(angle = 70, hjust = 1)) +
+   geom_text(aes(label=n), hjust = "center", vjust = 1)
+)
+```
+
+Text Analysis of Event Names
+
+```{r}
+library(tm)
+dyn.load(paste0(system2('/usr/libexec/java_home', stdout = TRUE), '/lib/server/libjvm.dylib'))
+library(qdap)
+library(qdapRegex)
+
+# Define clean_corpus function
+clean_corpus <- function(corpus){
+  corpus <- tm_map(corpus, removePunctuation)
+  corpus <- tm_map(corpus, content_transformer(tolower))
+  corpus <- tm_map(corpus, content_transformer(replace_symbol))
+  corpus <- tm_map(corpus, removeWords, c(stopwords("en")))
+  corpus <- tm_map(corpus, removeNumbers)
+  corpus <- tm_map(corpus, stripWhitespace)
+  #corpus <- tm_map(corpus, PlainTextDocument)
+  return(corpus)
+}
+
+
+# stem completion function
+stemCompletion2 <- function(x, dictionary) {
+   x <- unlist(strsplit(as.character(x), " "))
+    # # Oddly, stemCompletion completes an empty string to
+	  # a word in dictionary. Remove empty string to avoid issue.
+   x <- x[x != ""]
+   x <- stemCompletion(x, dictionary=dictionary)
+   x <- paste(x, sep="", collapse=" ")
+   PlainTextDocument(stripWhitespace(x))
+}
+
+# df data into completed corpus
+df3 <- df2 %>% select(events.id, events.name.text, events.is_free) %>% unique()
+df3 <- rename(df3, doc_id=events.id, text=events.name.text)
+corp <- VCorpus(DataframeSource(df3)) # df to source to corpus
+clea <- clean_corpus(corp) # clean corpus
+
+# Review
+corp[[2]][1]
+clea[[2]][1]
+# s[[2]][1]
+#comp[[2]][1]
+```
+
+```{r}
+# Add meta data to corpus from df
+tdm <- TermDocumentMatrix(clea) # convert to term-document-matrix
+
+library(tidytext)
+clea.td <- tidy(tdm)
+
+meta <- select(df3, doc_id, events.is_free) # meta data 
+colnames(meta) <- c("document", "events.is_free")
+meta$document <- as.character(meta$document)
+clea.td <- as.data.frame(left_join(clea.td, meta, by="document")) # combine data with meta data
+
+clea.td %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms - Event Names") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+# top 25 words, all
+clea.td$events.is_free <- ifelse(clea.td$events.is_free==TRUE, 1, 0)
+clea.td_free <- clea.td %>% filter(events.is_free==1)
+clea.td_paid <- clea.td %>% filter(events.is_free==0)
+
+# top 25 words, free events
+clea.td_free %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms for Free Events Names") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+# top 25 words, paid events
+clea.td_paid %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms for Paid Events Names") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+# Pyramid Plot
+topwords <- clea.td %>% group_by(events.is_free, term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 30, wt = n)  %>%
+                ungroup() %>% 
+                arrange(desc(n))
+topwords.high <- filter(topwords, events.is_free=="1")
+topwords.low <- filter(topwords, events.is_free=="0")
+common.words <- left_join(topwords.high, topwords.low, by="term") %>% mutate(difference=abs(n.x-n.y)) %>% arrange(desc(difference)) %>% filter(difference != 'NA')
+library(plotrix)
+pyramid.plot(common.words$n.x, common.words$n.y, 
+                  labels = common.words$term, 
+             gap = 20, 
+             top.labels = c("Paid Events", " ", "Free Events"), 
+             main = "Top Words in Common - Names",
+             laxlab = NULL, 
+             raxlab = NULL, 
+             unit = NULL, 
+             labelcex=0.5, show.values=TRUE)
+```
+
+
+Text Analysis of Event Descriptions
+
+```{r}
+library(tm)
+dyn.load(paste0(system2('/usr/libexec/java_home', stdout = TRUE), '/lib/server/libjvm.dylib'))
+library(qdap)
+library(qdapRegex)
+
+# Define clean_corpus function
+clean_corpus <- function(corpus){
+  corpus <- tm_map(corpus, removePunctuation)
+  corpus <- tm_map(corpus, content_transformer(tolower))
+  corpus <- tm_map(corpus, content_transformer(replace_symbol))
+  corpus <- tm_map(corpus, removeWords, c(stopwords("en")))
+  corpus <- tm_map(corpus, removeNumbers)
+  corpus <- tm_map(corpus, stripWhitespace)
+  #corpus <- tm_map(corpus, PlainTextDocument)
+  return(corpus)
+}
+
+
+# Dr. Brambor's stem completion function
+stemCompletion2 <- function(x, dictionary) {
+   x <- unlist(strsplit(as.character(x), " "))
+    # # Oddly, stemCompletion completes an empty string to
+	  # a word in dictionary. Remove empty string to avoid issue.
+   x <- x[x != ""]
+   x <- stemCompletion(x, dictionary=dictionary)
+   x <- paste(x, sep="", collapse=" ")
+   PlainTextDocument(stripWhitespace(x))
+}
+
+# df data into completed corpus
+df3 <- df2 %>% select(events.id, events.description.text, events.is_free) %>% unique()
+df3 <- rename(df3, doc_id=events.id, text=events.description.text)
+corp <- VCorpus(DataframeSource(df3)) # df to source to corpus
+clea <- clean_corpus(corp) # clean corpus
+
+
+# Review
+corp[[2]][1]
+clea[[2]][1]
+# s[[2]][1]
+#comp[[2]][1]
+
+# Add meta data to corpus from df
+tdm <- TermDocumentMatrix(clea) # convert to term-document-matrix
+
+library(tidytext)
+clea.td <- tidy(tdm)
+
+meta <- select(df3, doc_id, events.is_free) # meta data 
+colnames(meta) <- c("document", "events.is_free")
+meta$document <- as.character(meta$document)
+clea.td <- as.data.frame(left_join(clea.td, meta, by="document")) # combine data with meta data
+
+# top 25 words, all
+clea.td %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms - Event Descriptions") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+clea.td$events.is_free <- ifelse(clea.td$events.is_free==TRUE, 1, 0)
+clea.td_free <- clea.td %>% filter(events.is_free==1)
+clea.td_paid <- clea.td %>% filter(events.is_free==0)
+
+# top 25 words, free events
+clea.td_free %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms for Free Events Descriptions") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+# top 25 words, paid events
+clea.td_paid %>%  group_by(term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 25, wt = n)  %>%
+                ungroup() %>%
+                mutate(term = reorder(term, n)) %>%
+ggplot(aes(x = term, y = n, fill = n)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label=n, x=term, y=n-1), hjust = 1, color="white") +
+  xlab(NULL) +  coord_flip() + theme_fivethirtyeight() +
+  ggtitle("Top 25 Frequent Terms for Paid Events Descriptions") + 
+  scale_colour_gradientn(colours=rainbow(4)) +
+  theme(legend.position="none")
+
+# Pyramid Plot
+topwords <- clea.td %>% group_by(events.is_free, term) %>%
+                summarise(n = sum(count)) %>%
+                top_n(n = 30, wt = n)  %>%
+                ungroup() %>% 
+                arrange(desc(n))
+topwords.high <- filter(topwords, events.is_free=="1")
+topwords.low <- filter(topwords, events.is_free=="0")
+common.words <- left_join(topwords.high, topwords.low, by="term") %>% mutate(difference=abs(n.x-n.y)) %>% arrange(desc(difference)) %>% filter(difference != 'NA')
+library(plotrix)
+pyramid.plot(common.words$n.x, common.words$n.y, 
+                  labels = common.words$term, 
+             gap = 1500, 
+             top.labels = c("Paid Events", " ", "Free Events"), 
+             main = "Top Words in Common - Names",
+             laxlab = NULL, 
+             raxlab = NULL, 
+             unit = NULL, 
+             labelcex=0.5, show.values=TRUE)
+```
+
