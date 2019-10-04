@@ -1,0 +1,1810 @@
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── [1mAttaching packages[22m ──────────────────────────── tidyverse 1.2.1 ──
+[32m✔[39m [34mggplot2[39m 3.1.1       [32m✔[39m [34mreadr  [39m 1.3.1  
+[32m✔[39m [34mtibble [39m 2.1.1       [32m✔[39m [34mpurrr  [39m 0.3.2  
+[32m✔[39m [34mtidyr  [39m 0.8.3       [32m✔[39m [34mdplyr  [39m 0.8.0.[31m1[39m
+[32m✔[39m [34mggplot2[39m 3.1.1       [32m✔[39m [34mforcats[39m 0.4.0  
+── [1mConflicts[22m ─────────────────────────────── tidyverse_conflicts() ──
+[31m✖[39m [34mlubridate[39m::[32mas.difftime()[39m masks [34mbase[39m::as.difftime()
+[31m✖[39m [34mlubridate[39m::[32mdate()[39m        masks [34mbase[39m::date()
+[31m✖[39m [34mtidyr[39m::[32mextract()[39m         masks [34mmagrittr[39m::extract()
+[31m✖[39m [34mdplyr[39m::[32mfilter()[39m          masks [34mstats[39m::filter()
+[31m✖[39m [34mpurrr[39m::[32mflatten()[39m         masks [34mjsonlite[39m::flatten()
+[31m✖[39m [34mlubridate[39m::[32mintersect()[39m   masks [34mbase[39m::intersect()
+[31m✖[39m [34mdplyr[39m::[32mlag()[39m             masks [34mstats[39m::lag()
+[31m✖[39m [34mpurrr[39m::[32mset_names()[39m       masks [34mmagrittr[39m::set_names()
+[31m✖[39m [34mlubridate[39m::[32msetdiff()[39m     masks [34mbase[39m::setdiff()
+[31m✖[39m [34mlubridate[39m::[32munion()[39m       masks [34mbase[39m::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-19 23:08:04"
+No encoding supplied: defaulting to UTF-8.
+
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Operation was aborted by an application callback
+Calls: GET ... request_fetch -> request_fetch.write_memory -> <Anonymous>
+Execution halted
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-19 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-20 23:09:03"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-21 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-22 23:09:03"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-23 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-24 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-25 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-26 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-27 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-28 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-29 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-30 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-07-31 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-01 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-02 23:09:03"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-03 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-04 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-05 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-06 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-07 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-08 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-09 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-10 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-11 23:09:03"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-12 23:09:03"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-13 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-14 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-15 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
+
+Attaching package: ‘lubridate’
+
+The following object is masked from ‘package:base’:
+
+    date
+
+Registered S3 methods overwritten by 'ggplot2':
+  method         from 
+  [.quosures     rlang
+  c.quosures     rlang
+  print.quosures rlang
+Registered S3 method overwritten by 'rvest':
+  method            from
+  read_xml.response xml2
+── Attaching packages ─────────────────────────────────────── tidyverse 1.2.1 ──
+✔ ggplot2 3.1.1       ✔ readr   1.3.1  
+✔ tibble  2.1.1       ✔ purrr   0.3.2  
+✔ tidyr   0.8.3       ✔ dplyr   0.8.0.1
+✔ ggplot2 3.1.1       ✔ forcats 0.4.0  
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ lubridate::as.difftime() masks base::as.difftime()
+✖ lubridate::date()        masks base::date()
+✖ tidyr::extract()         masks magrittr::extract()
+✖ dplyr::filter()          masks stats::filter()
+✖ purrr::flatten()         masks jsonlite::flatten()
+✖ lubridate::intersect()   masks base::intersect()
+✖ dplyr::lag()             masks stats::lag()
+✖ purrr::set_names()       masks magrittr::set_names()
+✖ lubridate::setdiff()     masks base::setdiff()
+✖ lubridate::union()       masks base::union()
+[1] "retrieve data from the 1st page for wine events"
+[1] "2019-08-16 23:09:02"
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+No encoding supplied: defaulting to UTF-8.
+[1] "wine events all done!!"
