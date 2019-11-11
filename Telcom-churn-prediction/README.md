@@ -39,7 +39,7 @@ Before a series of modeling, it is useful to get an initial perception of some i
 From the data visualization, it could be assumed that the `monthly contract`,  use of  `online backup` and `internet` service could affect the customer churn. Also, the lack of  `partner` could potentially attribute to higher customer churn as well. We will confirm these assumptions with data modeling.
 
 ## XGBoost models
- In this project, we start with a native XGBoost model without tuning the hyperparameters. In this case, the this first XGBoost model is able to achieve 88% accuracy and 95% AUC on a completely seperate hold-out dataset
+ In this project, we start with a native XGBoost model without tuning the hyperparameters. In this case, the this first XGBoost model is able to achieve 88% accuracy and 94% AUC on a completely seperate hold-out dataset
  
 ![xgb 1 feature importance not tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb1%20test.png) 
 
@@ -49,17 +49,17 @@ On the other hand, after a lot of energy spent on tuning different hyperparamete
 
 ## Conclusions:
 
-`xgb1 = XGBClassifier(
- learning_rate =0.1,
- n_estimators=1000,
- max_depth=5,
- min_child_weight=1,
- gamma=0,
- subsample=0.8,
- colsample_bytree=0.8,
- objective= 'binary:logistic',
- nthread=4,
- scale_pos_weight=1)`
+`xgb1 = XGBClassifier(    
+ learning_rate =0.1,    
+ n_estimators=1000,    
+ max_depth=5,    
+ min_child_weight=1,    
+ gamma=0,    
+ subsample=0.8,    
+ colsample_bytree=0.8,    
+ objective= 'binary:logistic',    
+ nthread=4,    
+ scale_pos_weight=1)`    
 
 
 [See full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
