@@ -49,17 +49,17 @@ On the other hand, after a lot of energy spent on tuning different hyperparamete
 
 ## Conclusions:
 
-`xgb1 = XGBClassifier(    
- learning_rate =0.1,    
- n_estimators=1000,    
- max_depth=5,    
- min_child_weight=1,    
- gamma=0,    
- subsample=0.8,    
- colsample_bytree=0.8,    
- objective= 'binary:logistic',    
- nthread=4,    
- scale_pos_weight=1)`    
+`xgb1 = XGBClassifier(        
+ learning_rate =0.1,        
+ n_estimators=1000,        
+ max_depth=5,        
+ min_child_weight=1,        
+ gamma=0,        
+ subsample=0.8,        
+ colsample_bytree=0.8,        
+ objective= 'binary:logistic',        
+ nthread=4,        
+ scale_pos_weight=1)`        
 
 
 [See full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
