@@ -48,27 +48,24 @@ On the other hand, after a lot of energy spent on tuning different hyperparamete
 ![xgb 2 feature importance tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb2%20test.png)
 
 ## Conclusions:
+1.	Although the tuned XGBoost model does not yield a better performance, it provides good insights into important features that generally resonate with the results from explanatory data analysis.
+
+2.	In general, monthly contract, fiber internet, and tech support are important factors that affect customer retention.
+
+3.	Specifically, using monthly contract and fiber internet service is likely to lead to higher customer churn. In contrast, using tech support service is likely to reduce customer churn.
+
+4.	Through XGBoost, we’ve also set up a model that can achieve 88% accuracy and 94% AUC when predicting customer churn given a new dataset. This project uses accuracy as metric for model performance based on the assumption that there is equal cost between false positive and false negative The setup of optimal parameters is as follows: 
 
 `xgb1 = XGBClassifier( 
-
  learning_rate =0.1,  
- 
  n_estimators=1000,   
- 
  max_depth=5,        
- 
  min_child_weight=1,      
- 
  gamma=0,        
- 
  subsample=0.8,        
- 
  colsample_bytree=0.8,      
- 
  objective= 'binary:logistic',   
- 
  nthread=4,        
- 
  scale_pos_weight=1)`        
 
 
