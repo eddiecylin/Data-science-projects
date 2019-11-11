@@ -4,6 +4,8 @@ This project uses customer data from a telecommunication company and intends to 
 
 The following will be a presentation of the key findings in this project 
 
+## Data source & feature overview:
+The dataset was downloaded from Kaggle. Excluding customer ID, there are 19 features which will be used as predictors and 1 target variable (customer churn). Here is the list for feature definitions.
 
 
 ![overview of features](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/images/variables.png)
