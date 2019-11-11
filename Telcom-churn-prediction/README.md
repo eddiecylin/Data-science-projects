@@ -7,6 +7,13 @@ The following will be a presentation of the key findings in this project
 ## Data source & feature overview:
 The dataset was downloaded from Kaggle. Excluding customer ID, there are 19 features which will be used as predictors and 1 target variable (customer churn). Here is the list for feature definitions.
 
+## Check data integrity:
+Before data modeling, we will first check the missing values and outliers
+
+![missing values](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/missing%20values%20viz.png)
+
+Using heatmap, it shows that there is a small number of missing values existing in the `TotalCharges` column. Using a simple line of code `df.isnull().sum()`, it confirms that there are 11 missing values in that column. Since it is relatively a small number, we could keep data rows which don’t contain missing values in this column
+
 
 ![overview of features](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/images/variables.png)
 
