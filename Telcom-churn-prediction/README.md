@@ -68,6 +68,8 @@ On the other hand, after a lot of energy spent on tuning different hyperparamete
  nthread=4,        
  scale_pos_weight=1)`        
 
+For more details, you can see the full notebook here:
+[full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
 
-[See full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
-[See notebook to host model on AWS SageMaker](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction(SageMaker).ipynb)
+I also modified the same notebook so we can host it on Amazon Sagemaker and S3, you can see the notebook here:
+[notebook to host model on AWS SageMaker](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction(SageMaker).ipynb)
