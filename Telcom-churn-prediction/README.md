@@ -39,13 +39,27 @@ Before a series of modeling, it is useful to get an initial perception of some i
 From the data visualization, it could be assumed that the `monthly contract`,  use of  `online backup` and `internet` service could affect the customer churn. Also, the lack of  `partner` could potentially attribute to higher customer churn as well. We will confirm these assumptions with data modeling.
 
 ## XGBoost models
- In this project, we start with a native XGBoost model without tuning the hyperparameters. In this case, the this first XGBoost model is able to achieve 87% accuracy and 93% AUC on a completely seperate hold-out dataset
+ In this project, we start with a native XGBoost model without tuning the hyperparameters. In this case, the this first XGBoost model is able to achieve 88% accuracy and 95% AUC on a completely seperate hold-out dataset
  
-![xgb 1 feature importance not tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb1%20validation.png) 
+![xgb 1 feature importance not tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb1%20test.png) 
 
-On the other hand, after a lot of energy spent on tuning different hyperparameters, including `max_depth, min_child_weight, gamma, subsample, learning rate` etc., this tuned XGBoost model achieve 79% accuracy and 84% AUC on the same completely seperate hold-out dataset, which indicates a lower model performance compared to the 1st XGBoost model.
+On the other hand, after a lot of energy spent on tuning different hyperparameters, including `max_depth, min_child_weight, gamma, subsample, learning rate` etc., this tuned XGBoost model achieve 81% accuracy and 86% AUC on the same completely seperate hold-out dataset, which indicates a lower model performance compared to the 1st XGBoost model.
 
-![xgb 2 feature importance tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb2%20validation.png)
+![xgb 2 feature importance tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb2%20test.png)
+
+## Conclusions:
+
+`xgb1 = XGBClassifier(
+ learning_rate =0.1,
+ n_estimators=1000,
+ max_depth=5,
+ min_child_weight=1,
+ gamma=0,
+ subsample=0.8,
+ colsample_bytree=0.8,
+ objective= 'binary:logistic',
+ nthread=4,
+ scale_pos_weight=1)`
 
 
 [See full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
