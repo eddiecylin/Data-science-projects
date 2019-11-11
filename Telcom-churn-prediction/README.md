@@ -7,6 +7,8 @@ The following will be a presentation of the key findings in this project
 ## Data source & feature overview:
 The dataset was downloaded from Kaggle. Excluding customer ID, there are 19 features which will be used as predictors and 1 target variable (customer churn). Here is the list for feature definitions.
 
+![overview of features](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/images/variables.png)
+
 ## Check data integrity:
 Before data modeling, we will first check the missing values and outliers
 
@@ -22,9 +24,23 @@ By observing the correlation plot, the only obvious correlation is between tenur
 
 ![correlation plot](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/correlation.png)
 
+## Exploratory data visualization: 
+
+Before a series of modeling, it is useful to get an initial perception of some important features in relation to customer churn. One practical approach will be observe the pattern of different features after subsetting them into  `churn` or  `no churn` categories. Here are a few interesting findings:
+
+![contract](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/contract.png)
+
+![internet service](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/internet%20service.png)
+
+![online backup](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/online%20backup.png)
+
+![online backup](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/partner%20.png)
 
 
-![overview of features](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/images/variables.png)
+
+
+
+
 
 [See full project notebook](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction.ipynb)    
 [See notebook to host model on AWS SageMaker](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/Telco_churn_prediction(SageMaker).ipynb)
