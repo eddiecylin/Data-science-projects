@@ -36,8 +36,7 @@ Before a series of modeling, it is useful to get an initial perception of some i
 
 ![online backup](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/partner%20.png)
 
-
-
+From the data visualization, it could be assumed that the `monthly contract`,  use of  `online backup` and `internet` service could affect the customer churn. Also, the lack of  `partner` could potentially attribute to higher customer churn as well. We will confirm these assumptions with data modeling.
 
 
 
