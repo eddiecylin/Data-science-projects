@@ -10,9 +10,18 @@ The dataset was downloaded from Kaggle. Excluding customer ID, there are 19 feat
 ## Check data integrity:
 Before data modeling, we will first check the missing values and outliers
 
+Using heatmap, it shows that there is a small number of missing values existing in the `TotalCharges` column. Using a simple line of code `df.isnull().sum()`, it confirms that there are 11 missing values in that column. Since it is relatively a small number, we could keep data rows which don’t contain missing values in this column.
+
 ![missing values](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/missing%20values%20viz.png)
 
-Using heatmap, it shows that there is a small number of missing values existing in the `TotalCharges` column. Using a simple line of code `df.isnull().sum()`, it confirms that there are 11 missing values in that column. Since it is relatively a small number, we could keep data rows which don’t contain missing values in this column
+Next, we will look at the summary table to detect outliers and correlation plot for continuous features. By looking at the maximum and minimum for the continuous features, it shows that there are no significant outliers. 
+
+![data summary table](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/outliers%20.png)
+
+By observing the correlation plot, the only obvious correlation is between tenure and total charge. This makes intuitive sense as the longer you stay in the company's service, the more in total you spend. What's of note is that monthly charge and total charge are modestly correlated (r=.65). This suggests that for long tenure customers, their monthly payment may not be high although it is possible.
+
+![correlation plot](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/correlation.png)
+
 
 
 ![overview of features](https://github.com/eddiecylin/data-science-projects/blob/master/Telcom-churn-prediction/images/variables.png)
