@@ -43,7 +43,7 @@ From the data visualization, it could be assumed that the `monthly contract`,  u
  
 ![xgb 1 feature importance not tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb1%20validation.png) 
 
-On the other hand, after a lot of energy spent on tuning different hyperparameters, including `max_depth, min_child_weight, gamma, subsample, learning rate` etc., this tuned XGBoost model achieve 87% accuracy and 93% AUC on the same completely seperate hold-out dataset, which indicates a lower model performance compared to the 1st XGBoost model.
+On the other hand, after a lot of energy spent on tuning different hyperparameters, including `max_depth, min_child_weight, gamma, subsample, learning rate` etc., this tuned XGBoost model achieve 79% accuracy and 84% AUC on the same completely seperate hold-out dataset, which indicates a lower model performance compared to the 1st XGBoost model.
 
 ![xgb 2 feature importance tuned](https://github.com/eddiecylin/Data-science-projects/blob/master/Telcom-churn-prediction/images/xgb2%20validation.png)
 
